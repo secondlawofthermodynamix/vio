@@ -1,0 +1,188 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Helvetica.woff') format('woff');;
+}
+
+@font-face {
+  font-family: 'Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/HelveticaBlack.woff') format('woff');
+}
+
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: white;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.home3 {
+  display: none;
+}
+
+@keyframes fade-out {
+  from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+}
+
+.hideme {
+    opacity:0;
+}
+
+.box2 {
+  display: none;
+}
+
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cvlogo {
+  display: none;
+}
+
+.boximprint {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+body {
+  font-family: 'Helvetica';
+}
+
+.backhome {
+  text-align: center;
+}
+
+.boxcv {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.pic1 {
+  width: 500px;
+}
+
+.frame {
+  width: 700px;
+  height: 700px;
+}
+
+.textcv {
+  text-align: left;
+  width: 700px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+
+
+
+.textimprint {
+  text-align: center;
+}
+
+@media (pointer:none), (pointer:coarse) {
+
+  body {
+    font-size: 50px
+  }
+
+  .pic1 {
+    width: 100%;
+  }
+
+  .frame {
+    width: 85vw;
+    height: 100%;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .textcv {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  .box2 {
+    display: initial;
+  }
+
+  .box2 > div {
+    padding: 20px;
+  }
+
+  .imprint {
+    float: right;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cvlogo {
+    display: initial;
+    width: 150px;
+  }
+
+  .home3 {
+    display: initial;
+  }
+
+  .home2 {
+    display: none;
+  }
+
+}
