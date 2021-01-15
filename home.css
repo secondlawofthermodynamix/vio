@@ -159,6 +159,10 @@ body {
     display: initial;
   }
 
+  a {
+    text-decoration: none;
+  } 
+
   .box2 > div {
     padding: 20px;
   }
@@ -168,8 +172,15 @@ body {
   }
 
   .menu {
+    text-decoration: none;
     display: flex;
     justify-content: space-between;
+  }
+
+  .options {
+    border-radius: 25px;
+    border: 2px solid;
+    padding: 20px; 
   }
 
   .cvlogo {
